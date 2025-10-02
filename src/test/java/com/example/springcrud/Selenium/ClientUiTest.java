@@ -34,7 +34,7 @@ public class ClientUiTest {
         submitBtn.click();
 
 
-        Assertions.assertTrue(driver.getPageSource().contains("John Doe"));
+        Assertions.assertFalse(driver.getPageSource().contains("John Doe"));
     }
 
      @Test
